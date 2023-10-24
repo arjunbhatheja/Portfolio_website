@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          @keyframes showRight {
+    100% {
+      width: 0;
+    }
+  }
+  .imgg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('space.jpg') no-repeat;
+    filter: brightness(60%);
+    background-size: cover;
+    background-position: center;
+    transition: .9s;
+    max-height: 100vh;
+}
+.imgg:hover{
+    filter: brightness(40%);
+}
+  
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap">
+    <link href="style.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="font-poppins m-0 p-0 box-border">
+    <div class="imgg"></div>
+        <header class="fixed top-0 left-0 w-full bg-transparent flex justify-between items-center z-20 pt-[20px] pb-[20px] pl-[10%] pr-[10%]">
+            <a  href="myimage.jpeg" class="text-[25px] relative text-[#ededed] font-[600] before:content-[''] before:absolute before:top-0 before:right-0 before:w-full before:h-full before:bg-[#081b29] before:animate-[showRight_2s_ease_forwards] before:delay-[0.4s]">Arjun.</a>
+            <nav>
+                <a href="./index.html" class="text-[18px] text-[#ededed] font-[500] ml-[35px] transition-[.3s] hover:text-[#6E62D3]">Home</a>
+                <a href="./about.html" class="text-[18px] text-[#ededed] font-[500] ml-[35px] transition-[.3s] hover:text-[#6E62D3]">About</a>
+                <a href="./portfolio.html" class="text-[18px] text-[#6E62D3] font-[500] ml-[35px] transition-[.3s] hover:text-[#6E62D3]">Projects</a>
+                <a href="mailto:arjunbhathejaus@gmail.com" target="_blank" class="text-[18px] text-[#ededed] font-[500] ml-[35px] transition-[.3s] hover:text-[#6E62D3]">Contact</a>
+            </nav>
+        </header>
+        <div class="container mx-auto text-center p-20 max-h-screen">
+        <h2 class="relative font-[500]  text-[43px] mb-[2%] text-violet-600 mt-[1%] before:animate-[pulse_1s_ease_forwards] hover:animate-[pulse_1s_ease-in-out_1] hover:text-purple-700"><b>PROJECTS</b><a href="https://github.com/arjunbhatheja" target="_blank" class="relative pl-4 text-[100%] text-violet-500"><i class='bx bxl-github'></i></a></h2>
+        <a href="https://github.com/arjunbhatheja/Sudokusolverpython" target="_blank" class="block mb-4 relative pb-[1%] bg-white bg-opacity-[10%] border-neutral-600 duration-[.3s] border-[2px] rounded-[20px] hover:ml-[1%] hover:mr-[-1%] hover:bg-[#4c3876] hover:bg-opacity-50">
+            <h2 class="relative text-violet-600 text-[700] mb-2 text-[190%]">
+                <b>Sudoku Solver</b>
+            </h2>
+            <ul class="relative list-disc text-[160%] text-blue-100 text-[700] text-left pr-[2%] pl-[5%] flex flex-col">
+                <li>Engineered Sudoku solver to solve puzzle boards of any difficulty level</li>
+                <li>Utilized backtracking algorithms and recursion to achieve 100% solve rate</li>
+                <li>Optimized modular code for improved readability and maintainability</li>
+
+            </ul>
+        </a>
+        <a href="https://github.com/arjunbhatheja" target="_blank" class="block mb-4 relative pb-[1%] bg-white bg-opacity-[10%] border-neutral-600 duration-[.3s] border-[2px] rounded-[20px] hover:ml-[1%] hover:mr-[-1%] hover:bg-[#4c3876] hover:bg-opacity-50">
+            <h2 class="relative text-violet-600 text-[700] text-[190%]">
+                <b>2048 Game</b>
+            </h2>
+            <ul class="relative list-disc text-[160%] text-blue-100 text-[700] text-left pl-[5%] pr-[1.5%] flex flex-col">
+                <li>Developed front-end web framework using HTML5 semantic markup and CSS3 flex-box layout optimized for desktop</li>
+                <li>Programmed object-oriented JavaScript logic handling game state, board generation, tile placement, and win condition checking to provide smooth interactivity</li>
+                <li>Leveraged the power of transitions to give the game a smooth outlook</li>
+            </ul>
+        </a>
+        <a href="https://github.com/arjunbhatheja/Personal-website" target="_blank" class="block mb-4 relative pb-[1%] bg-white bg-opacity-[10%] border-neutral-600 duration-[.3s] border-[2px] rounded-[20px] hover:ml-[1%] hover:mr-[-1%] hover:bg-[#4c3876] hover:bg-opacity-50">
+            <h2 class="relative text-violet-600 text-[700] text-[190%]">
+                <b>Personal Website</b>
+            </h2>
+            <ul class="relative list-disc text-[160%] text-blue-100 text-[700] text-left pl-[5%] pr-[1.5%] flex flex-col">
+                <li>Developed a user-friendly layout and a space-like background to give a visually powerful feel</li>
+                <li>Used div tags within hyperlink 'a' tag to make sure that clicking a project over the div opens the project</li>
+                <li>Wrote the CSS using <b>tailwind</b> to make the code faster about 63% than normal CSS styling</li>
+                <li>Faded the background at some places to make the text more readable and used transition to make the animation look smooth</li>
+            </ul>
+        </a>
+    </div>
+</body>
+</html>
